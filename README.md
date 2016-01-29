@@ -14,33 +14,33 @@ Syncker's goal is to backup and sync user installed packages in an Ubuntu system
 
 To start using it, first register yourself in the server:
 
-    `$ syncker register flaviamissi@gmail.com`
+    $ syncker register flaviamissi@gmail.com
 
 Then choose a password to identify yourself. This will log you in automatically.
 
 ####First time using it
 If it's your first time using syncker, we'll start by updating the server with your local packages:
 
-    `$ syncker push`
+    $ syncker push
 
 ####Getting a new machine on sync
 When adding a new machine, first login:
 
-    `$ syncker login flaviamissi@gmail.com`
+    $ syncker login flaviamissi@gmail.com
 
 Type your password and let's move on with the update:
 
-    `$ syncker pull`
+    $ syncker pull
 
 This will update your local syncker database with everything stored on the server.
 
 To install the new packages, run:
 
-    `$ syncker install`
+    $ syncker install
 
 In the `pull` step we could have used the `--install` flag, like this:
 
-    `$ syncker pull --install`
+    $ syncker pull --install
 
 This would update and install all new packages coming from the server.
 
